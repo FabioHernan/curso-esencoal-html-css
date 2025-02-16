@@ -5,6 +5,10 @@
     --gray10: #616161; 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: charter;
     src: url(../fonts/charter-regular.otf);
@@ -45,6 +49,10 @@ a {
 header {
     font-size: 14px;
     color: var(--gray10);
+    position: absolute;
+    border: 1px solid red;
+    width: 208px;
+    top: 64px;
 }
 
 header a{
@@ -58,6 +66,11 @@ header a:hover {
 
 nav details summary {
     font-weight: bold;
+    line-height: 24px;
+}
+
+header li {
+    margin-bottom: 16px;
 }
 
 h1{
@@ -112,13 +125,30 @@ blockquote span {
 blockquote span::before {
     content: '- '
 }
+
+.header {
+    border: 3px #FEC62E solid;
+    position: sticky;
+    top: 0;
+}
+
+.header-content{
+    position: relative;
+    left: -232px;
+}
+
 .hero{
     background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url(../images/patron-1.png);
     height:350px;
 }
 
+.debug{
+    border: 1px solid goldenrod
+}
+
 .section-content {
     margin-top: 154px;
+    position: relative;
 }
 
 .section-content:first-of-type{
@@ -142,22 +172,45 @@ blockquote span::before {
 
 .section-content {
     counter-reset: titleList;
+      
 }
 
 .section-content h3 {
     counter-increment: titleList; 
-    padding-bottom: 4px;
+   /*  padding-bottom: 4px; */
+    padding-bottom: 8px; /* se aumenta el pading por tema del diseño clase 45*/
+    position: relative;
 }
 
  .section-content h3::before {
     content: counter(titleList, decimal) '. ';
 }
 
-h3::after{
+ .section-content h3::after{
     content: '';
-    width: 32px;
+    width: 192px;
     height: 4px;
     background: var(--gray30);
     display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
    
+}
+
+
+.main{
+    /* border: 3px solid blueviolet; */
+   
+}
+
+.wrapper{
+    width: 902px;
+    margin: auto;
+   /*  border: 1px solid lightgreen; */
+}
+.main-content{
+   /*  border: 2px solid blueviolet;
+   /*  width: 900px; */
+    /* height: 1030px; */ */
 }
