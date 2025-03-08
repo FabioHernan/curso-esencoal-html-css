@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style-physical.css">
+    <link rel="stylesheet" href="./css/style - logical.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <!--  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+     <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200,400;0,600;0,700.1000;1,200..1000&display=swap" rel="stylesheet">">
     <title>El blog de Fabinho</title>
 </head>
 <body>
@@ -38,7 +41,8 @@
                         
                         <details open>
                             <summary>
-                                Conceptos esenciales del Desarrollo Web
+                                Conceptos esenciales del <br>
+                                Desarrollo Web
                             </summary>
                             <ol>
                                 <li> <a href="#html">Qué es HTML</a></li>
@@ -91,7 +95,7 @@
                         </p>
                         <p>
                             <span>
-                                Fabio Mosquera
+                             Fabio Mosquera
                             </span>
                         </p>
                     </blockquote>
@@ -105,16 +109,16 @@
                         Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado y la estructura del contenido.
                     </p>
                     <pre>
-        &lt;!DOCTYPE html&gt;
-        &lt;html lang=&quot;en&quot;&gt;
-        &lt;head&gt;
-        &lt;meta charset=&quot;UTF-8&quot;&gt;
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-        &lt;title&gt;Document&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;      
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;      
                     </pre>
                     <h3 id="tags">Etiquetas</h3>
                     <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene características y usos diferentes aunque visualmente den un resultado similar.</p>
@@ -156,11 +160,40 @@
                             <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
                         </ul>       
                     <h3>Modelo de caja</h3>
-                    <img src="./images/Rectangle 56.png" alt=" foto de leo" title="foto de leo">
+                   <!--  <img src="./images/Rectangle 56.png" alt=" foto de leo" title="foto de leo"> -->
                 </section>
+                <div class="section-content">
+                    <h2>Hola estos son algunos videos muy lindos</h2>
+                    <div class="slider">
+                        <scroll-container class="slider-container">
+                            <scroll-page class="slider-slide" id="video-1">
+                                <iframe id="video"  width="560" height="315" src="https://www.youtube.com/embed/D2FSq2npnnk?si=fZ8_gVNUhb3Zk9Uy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </scroll-page>
+                            <scroll-page class="slider-slide" id="video-2">
+                                <iframe id="video"  width="560" height="315" src="https://www.youtube.com/embed/D2FSq2npnnk?si=fZ8_gVNUhb3Zk9Uy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </scroll-page>
+                            <scroll-page class="slider-slide" id="video-3">
+                                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/D2FSq2npnnk?si=fZ8_gVNUhb3Zk9Uy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+                            </scroll-page>
+                        </scroll-container>
+                        <div class="slider-bullet-list">
+                            <a href="#video-1" class="slider-bullet"></a>
+                            <a href="#video-2" class="slider-bullet"></a>
+                            <a href="#video-3" class="slider-bullet"></a>
+                        </div>
+                    </div>
+                </div>
                     <p> Si tienes alguna pregunta escríbeme a 
                         <a href="mailto:soyhernan_18@hotmail.com" > soyhernan_18@hotmail.com</a>
                     </p>
+                    <div class="section-content">
+                        <h2>Ingresa a nuestra newsletter</h2>
+                        <form action="#" class="form">
+                            <input type="text" required placeholder="Nombre">
+                            <input type="email" required placeholder="Correo Electronico">
+                            <input type="submit" value="Suscribme">
+                        </form>
+                    </div>
             </div>
         </div>
     </main>
